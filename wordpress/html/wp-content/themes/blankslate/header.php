@@ -92,7 +92,7 @@ Facebook広告</span></a></li>
       </ul>
     </div>
     <div class="contact-button-div">
-      <a href="<?php echo get_template_directory() . '/contact/' ;?>"><button class="contact-button"><span lang="en">CONTACT</span><img class="header-button-arrow" src="https://global-ih.com/wp-content/uploads/2022/09/シェイプ-2.svg"></button></a>
+      <a href="https://global-ih.com/contact/"><button class="contact-button"><span lang="en">CONTACT</span><img class="header-button-arrow" src="https://global-ih.com/wp-content/uploads/2022/09/シェイプ-2.svg"></button></a>
     </div>
     <div class="hamburger-menu" id="hamburger-menu">
       <img src="https://global-ih.com/wp-content/uploads/2023/04/hamburger.svg">
