@@ -122,7 +122,7 @@
                             <h5>GIHがあなたのサイトの悩みを<br>＼ 解決まで一緒にサポート! ／</h5>
                         </div>
                         <div>
-                            <a href="mailto:info@test.com" target="_blank" class="p-button__contact__button">
+                            <a href=<?php echo get_template_directory() . '/contact/' ;?> class="p-button__contact__button">
                                 <span class="p-button__contact__button__text is-arrow">まずは気軽にお問い合わせ</span>
                             </a>
                         </div>
@@ -199,7 +199,7 @@
                     </ul>
                 </div>
                 <div class="pt-12 pb-16">
-                    <a href="mailto:info@test.com" target="_blank" class="p-button__contact__button">
+                    <a href=<?php echo get_template_directory() . '/contact/' ;?> class="p-button__contact__button">
                         <span class="p-button__contact__button__text is-arrow">まずは気軽にお問い合わせ</span>
                     </a>
                 </div>
@@ -294,7 +294,7 @@
                             </div>
                         </div>
                         <div class="pt-4">
-                            <a href="mailto:info@test.com" target="_blank" class="p-button__contact__button">
+                            <a href=<?php echo get_template_directory() . '/contact/' ;?> class="p-button__contact__button">
                                 <span class="p-button__contact__button__text">ご相談・お問い合わせ</span>
                             </a>
                         </div>
