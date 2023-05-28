@@ -1,1 +1,40 @@
 @import '../foundation/base.scss';
+
+
+.p-customContact {
+    // pluginのcss初期化
+    p {
+        margin: 0;
+    }
+    br {
+        display: none;
+    }
+
+    font-weight: bold;
+
+    &__container {
+        max-width: 768px;
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    &__inner {
+        padding: 0 1rem;
+    }
+
+    &__title {
+        text-align: center;
+        h1 {
+            max-width: 500px;
+            font-size: calc(25px + (32 - 25) * ((100vw - 375px) / (1920 - 375)));
+            border-bottom: 2px solid $red;
+            margin: 0 auto;
+            padding: 0 0 .75rem 0;
+        }
+    }
+}
+
+.wpcf7-spinner {
+    display: none !important;
+}

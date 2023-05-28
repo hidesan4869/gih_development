@@ -90,6 +90,38 @@ body {
   border-left: 6px solid #FFFFFF;
   transform: translateY(-50%);
 }
+.p-customContact {
+  font-weight: bold;
+}
+.p-customContact p {
+  margin: 0;
+}
+.p-customContact br {
+  display: none;
+}
+.p-customContact__container {
+  max-width: 768px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+.p-customContact__inner {
+  padding: 0 1rem;
+}
+.p-customContact__title {
+  text-align: center;
+}
+.p-customContact__title h1 {
+  max-width: 500px;
+  font-size: calc(25px + 7 * (100vw - 375px) / 1545);
+  border-bottom: 2px solid #DB0000;
+  margin: 0 auto;
+  padding: 0 0 0.75rem 0;
+}
+
+.wpcf7-spinner {
+  display: none !important;
+}
 .u-query.is-pc {
   display: none;
 }
