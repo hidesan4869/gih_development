@@ -1,0 +1,21 @@
+@import '../foundation/base.scss';
+
+// MEMO: swiper
+.swiper {
+    width: 100%;
+    // padding: 0 1rem;
+
+    // @include mq(sm) {
+    //     width: 650px;
+    // }
+    // @include mq(md) {
+    //     width: 800px;
+    // }
+    @include mq(lg) {
+        width: 1200px;
+    }
+}
+
+.swiper-pagination {
+    position: relative;
+}

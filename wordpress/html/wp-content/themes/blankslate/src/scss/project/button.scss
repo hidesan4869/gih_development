@@ -1,0 +1,37 @@
+@import '../foundation/base.scss';
+.p-button {
+    &__contact {
+            
+        &__button {
+            display: block;
+            position: relative;
+            max-width: 295px;
+            width: 100%;
+            background-color: #DB0000;
+            color: #FFFFFF;
+            font-weight: 700;
+            padding: 0.75rem 1.25rem;
+            font-size: calc(17px + (17 - 17) * ((100vw - 375px) / (1920 - 375)));
+            border-radius: 50px;
+            margin: 0 auto;
+            text-align: center;
+
+            &__text {
+                position: relative;
+                
+                &.is-arrow::after {
+                    content: "";
+                    position: absolute;
+                    top: 50%;
+                    left: calc(100% + 18px);
+                    width: 0;
+                    height: 0;
+                    border-top: 3px solid transparent;
+                    border-bottom: 3px solid transparent;
+                    border-left: 6px solid #FFFFFF;
+                    transform: translateY(-50%);
+                }
+            }
+        }
+    }
+}

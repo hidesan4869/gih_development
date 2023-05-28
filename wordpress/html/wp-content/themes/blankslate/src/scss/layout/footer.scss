@@ -1,0 +1,26 @@
+@import '../foundation/base.scss';
+
+/** font-weight **/
+.p-footer {
+    background-color: #F5F5F5;
+    padding-bottom: 4rem;
+
+    &__container {
+
+    }
+
+    &__inner {
+        
+    }
+
+    &__info {
+        display: flex;
+        max-width: 335px;
+        width: 100%;
+        margin: 0 auto;
+
+        &__post {
+
+        }
+    }
+}

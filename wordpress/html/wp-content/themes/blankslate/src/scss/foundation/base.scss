@@ -1,0 +1,59 @@
+$body-gray: #F5F5F5;
+$gray-50: rgb(249 250 251);
+$gray-100: rgb(243 244 246);
+$gray-150: rgb(240 235 235);
+$gray-200: rgb(229 231 235);
+$gray-300: rgb(209 213 219);
+$gray-400: rgb(156 163 175);
+$gray-500: rgb(107 114 128); 
+$gray-600: rgb(75 85 99);
+$gray-700: rgb(55 65 81);
+$base-gray: #F3F3F3;
+$white: #FFFFFF;
+$gradient-pink: #FF7D7D;
+$gradient-bitPink: #FF00DD;
+$gradient-purple: #FF009996;
+$black: #000000;
+$yellow: #FFE162;
+$purple: #C500FF;
+$pink: #FF1A94;
+$mid-pink: #FF4B8F;
+$sky-blue: #00FFEE;
+$gray70: #707070;
+$grayE9: #E9E9E9;
+$blue: #0A93E2;
+$beige: #fffbf4;
+$pink-hamburger: #D17E7E;
+$red: #DB0000;
+$green: #37BA88;
+$purple-300: #F490F4;
+
+$f_3xl:    3.125rem; //50px
+$f_xl:     2rem; //32px
+$f_md:     1.6rem; //22.4px
+$f_sm:     1.2rem; //19.2px
+$f_xs:     1rem;
+$default: .8rem;
+$min:     .75rem;
+
+$calc_h2: calc(30px + (50 - 30) * ((100vw - 375px) / (1920 - 375)));
+
+$sm: 300;
+$md: 500;
+$lg: 700;
+$bold: bold;
+
+$breakpoints: (
+    'xs': 'screen and (min-width: 420px)',
+    'sm': 'screen and (min-width: 640px)',
+    'md': 'screen and (min-width: 768px)',
+    'lg': 'screen and (min-width: 1024px)',
+    'xl': 'screen and (min-width: 1280px)',
+    '2xl': 'screen and (min-width: 1620px)',
+) !default;
+
+@mixin mq($breakpoint: lg) {
+    @media #{map-get($breakpoints, $breakpoint)} {
+        @content;
+    }
+}

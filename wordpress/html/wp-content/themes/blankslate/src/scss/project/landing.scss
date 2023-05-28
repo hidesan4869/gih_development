@@ -1,0 +1,379 @@
+@import '../foundation/base.scss';
+
+// MEMO: メインビジュアル
+.p-mainvisual {
+
+    &__container {
+
+    }
+    
+    &__inner {
+
+    }
+
+    &__image {
+        
+    }
+}
+
+.u-query {
+    &.is-pc {
+        display: none;
+    }
+
+    &.is-sp {
+        display: block;
+    }
+    @include mq(sm) {
+        &.is-pc {
+            display: block;
+        }
+        &.is-sp {
+            display: none;
+        }
+    }
+}
+
+// MEMO: 悩み
+.p-problem {
+    max-width: 1180px;
+    width: 100%;
+    margin: 0 auto;
+
+    &__container {
+        padding: 3rem 0;
+    }
+    
+    &__inner {
+        padding: 0 1rem;
+    }
+
+    &__box {
+        text-align: center;
+
+        &__title {
+            font-size: calc(18px + (18 - 18) * ((100vw - 375px) / (1920 - 375)));
+            font-weight: $lg;
+
+            &__strong {
+                font-size: calc(25px + (35 - 25) * ((100vw - 375px) / (1920 - 375)));
+                border-bottom: 2px solid $red;
+                padding-top: 1rem;
+                padding-bottom: 1rem;
+
+                span {
+                    color: $red;
+                }
+            }
+        }
+
+        &__subtitle {
+            font-weight: $lg;
+            padding-top: 4rem;
+
+            h3 {
+                font-size: calc(25px + (35 - 25) * ((100vw - 375px) / (1920 - 375)));
+
+                span {
+                    color: $red;
+                }
+            }
+
+            h4 {
+                font-size: calc(25px + (35 - 25) * ((100vw - 375px) / (1920 - 375)));
+
+                span {
+                    font-size: calc(30px + (50 - 30) * ((100vw - 375px) / (1920 - 375)));
+                    color: $red;
+                    position: relative;
+
+                    &::before {
+                        content: '';
+                        position: absolute;
+                        top: calc(100% - 23px);
+                        left: 0;
+                        width: 100%;
+                        height: 20px;
+                        background-color: $yellow;
+                        z-index: -1;
+
+                        @include mq(sm) {
+                            top: calc(100% - 28px);
+                        }
+                    }
+                }
+            }
+        }
+
+        &__sales__image {
+            max-width: 334px;
+            width: 100%;
+            margin: 0 auto;
+        }
+    }
+}
+
+// MEMO: 解決策
+.p-product {
+    background-color: $green;
+
+    &__container {
+        max-width: 1100px;
+        width: 100%;
+        margin: 0 auto;
+    }
+    
+    &__inner {
+        padding: 0 1rem;
+        color: $white;
+    }
+
+    &__box {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+
+        &__title {
+            font-size: calc(30px + (35 - 30) * ((100vw - 375px) / (1920 - 375)));
+            text-align: center;
+            font-weight: bold;
+            padding-bottom: 3rem;
+        }
+
+        &__content {
+
+            &__grid {
+                display: flex;
+                flex-direction: column;
+                row-gap: 2rem;
+                
+                @include mq(sm) {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr 1fr;
+                    column-gap: 2rem;
+                }
+
+                &__inner {
+                    padding-top: 2rem;
+                    padding-bottom: 2rem;
+                    padding-left: 1rem;
+                    padding-right: 1rem;
+                    border: 1px solid $white;
+                    border-radius: 10px;
+
+                    h3 {
+                        padding-bottom: 1.5rem;
+                        font-size: calc(20px + (20 - 20) * ((100vw - 375px) / (1920 - 375)));
+                        font-weight: $lg;
+                        text-align: center;
+                    }
+
+                    h4 {
+                        padding-top: 2rem;
+                        letter-spacing: 0.02rem;
+                        line-height: 1.75rem;
+                    }
+                }
+            }
+
+            &__contact {
+                text-align: center;
+                font-size: calc(20px + (20 - 20) * ((100vw - 375px) / (1920 - 375)));
+                font-weight: $lg;
+                padding-top: 2.5rem;
+                padding-bottom: 2rem;
+            }
+        }
+    }
+}
+
+// MEMO: サービス
+.p-service {
+    padding-top: 5rem;
+
+    &__container {
+        max-width: 1100px;
+        width: 100%;
+        margin: 0 auto;
+    }
+    
+    &__inner {
+        padding: 0 1rem;
+    }
+
+    &__title {
+        font-size: calc(25px + (35 - 25) * ((100vw - 375px) / (1920 - 375)));
+        font-weight: $bold;
+        text-align: center;
+    }
+    &__box {
+        padding-top: 3rem;
+    }
+
+    &__grid {
+        display: flex;
+        flex-direction: column;
+        row-gap: 3rem;
+
+        @include mq(sm) {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+
+        &__border {
+            border-top: 1px solid $purple-300;
+
+            &.is-under {
+
+                @include mq(sm) {
+                    border-bottom: 1px solid $purple-300;
+                }
+            }
+
+            &.is-last-under {
+                border-bottom: 1px solid $purple-300;
+            }
+
+            &.is-first-sp {
+                border-top: none;
+
+                @include mq(sm) {
+                    border-top: 1px solid $purple-300;
+                }
+            }
+        }
+
+        &__marginLeft {
+
+            @include mq(sm) {
+                margin-left: 2rem;
+            }
+        }
+
+        &__paddingLeft {
+
+            @include mq(sm) {
+                padding-left: 2rem;
+            }
+        }
+
+        &__subtitle {
+            display: block;
+            font-size: calc(14px + (14 - 14) * ((100vw - 375px) / (1920 - 375)));
+            font-weight: $lg;
+            text-align: center;
+        }
+
+        h3 {
+            text-align: center ;
+            font-size: calc(20px + (20 - 20) * ((100vw - 375px) / (1920 - 375)));
+            font-weight: $lg;
+        }
+        
+        h4 {
+            font-size: calc(45px + (45 - 45) * ((100vw - 375px) / (1920 - 375)));
+            font-weight: $lg;
+            text-align: center;
+            color: $purple-300;
+            padding-top: 2rem;
+        }
+
+        span {
+            font-size: calc(14px + (14 - 14) * ((100vw - 375px) / (1920 - 375)));
+        }
+
+        img {
+            margin: 0 auto;
+        }
+    }
+}
+
+// MEMO: 実績
+.p-achievements {
+    background-color: $yellow;
+    padding: 3rem 0;
+
+    &__container {
+        max-width: 1200px;
+        width: 100%;
+        margin: 0 auto;
+    }
+    
+    &__inner {
+    }
+
+    &__title {
+        text-align: center;
+        font-size: calc(25px + (35 - 25) * ((100vw - 375px) / (1920 - 375)));
+        font-weight: $lg;
+    }
+
+    &__subtitle {
+        display: flex;
+        justify-content: center;
+        padding: 3rem 1rem 0 1rem;
+        font-size: calc(14px + (14 - 14) * ((100vw - 375px) / (1920 - 375)));
+    }
+
+    &__text {
+        text-align: center;
+        padding-top: 1.5rem;
+        font-size: calc(14px + (14 - 14) * ((100vw - 375px) / (1920 - 375)));
+        line-height: 1.75rem;
+
+        span {
+            font-size: calc(16px + (16 - 16) * ((100vw - 375px) / (1920 - 375)));
+        }
+    }
+}
+
+// MEMO: 問い合わせ
+.p-contact {
+    background-color: #F5F5F5;
+
+    &__container {
+        padding: 3rem 0;
+    }
+    
+    &__inner {
+        padding: 0 1rem;
+    }
+
+    &__title {
+        font-size: calc(20px + (30 - 20) * ((100vw - 375px) / (1920 - 375)));
+        font-weight: $lg;
+        text-align: center;
+    }
+
+    &__subtitle {
+        display: flex;
+        justify-content: center;
+        padding: 2rem 0;
+        font-size: calc(14px + (14 - 14) * ((100vw - 375px) / (1920 - 375)));
+    }
+
+    &__box {
+        background-color: $white;
+        padding: 2.4rem 0 3rem;
+        max-width: 721px;
+        width: 100%;
+        margin: 0 auto;
+
+        &__tel {
+        
+        
+            &__flex {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                column-gap: 1rem;
+                letter-spacing: .2rem;
+
+                &__number {
+                    font-size: calc(30px + (30 - 30) * ((100vw - 375px) / (1920 - 375)));
+                    font-weight: $lg;
+                }
+            }
+
+        }
+    }
+}
