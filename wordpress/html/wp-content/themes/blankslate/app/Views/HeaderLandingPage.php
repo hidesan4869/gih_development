@@ -31,7 +31,7 @@
                                 </a>
                             </div>
                             <div class="l-header__contact">
-                                <a href="mailto:info@test.com" target="_blank" class="l-header__contact__button">
+                                <a href=<?php echo get_template_directory() . '/contact/' ;?> class="l-header__contact__button">
                                     <span>ご相談・お問い合わせ</span>
                                 </a>
                             </div>
