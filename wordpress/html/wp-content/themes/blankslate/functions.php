@@ -166,11 +166,13 @@ return $count;
 }
 
 /**
- * ランディングページ用
+ * MEMO: お問い合わせフォーム関連にのみスタイルシートを適応
+ *
+ * @return void
  */
-function scriptSetUp() {
-    wp_enqueue_style( 'tailwindcss', get_template_directory_uri() . '/css/tailwind.prod.css', array(), filemtime(get_template_directory() .'/css/tailwind.prod.css'), 'all');
-    wp_enqueue_style('my_style', get_theme_file_uri('/src/css/style.css'));
+function customContactFormStyle() {
+    if (is_page('contact') || is_page('contact-confirm') || is_page('contact-complete')) {
+        wp_enqueue_style('style', get_template_directory_uri() . '/src/css/style.css');
+    }
 }
-
-add_action('wp_enqueue_scripts', 'scriptSetUp');
+add_action('wp_enqueue_scripts', 'customContactFormStyle');

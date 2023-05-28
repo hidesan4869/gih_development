@@ -90,6 +90,140 @@ body {
   border-left: 6px solid #FFFFFF;
   transform: translateY(-50%);
 }
+header {
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+}
+
+input, textarea {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: none;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+.p-customContact {
+  font-weight: bold;
+}
+.p-customContact p {
+  margin: 0;
+}
+.p-customContact br {
+  display: none;
+}
+@media screen and (min-width: 640px) {
+  .p-customContact br.is-complete {
+    display: block;
+  }
+}
+.p-customContact__container {
+  max-width: 768px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+.p-customContact__inner {
+  padding: 2rem 1rem 4rem 1rem;
+}
+.p-customContact__box {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+}
+.p-customContact__title {
+  text-align: center;
+}
+.p-customContact__title h1 {
+  max-width: 500px;
+  font-size: calc(25px + 7 * (100vw - 375px) / 1545);
+  border-bottom: 2px solid #DB0000;
+  margin: 0 auto;
+  padding: 0 0 0.75rem 0;
+}
+.p-customContact__title h2 {
+  font-size: calc(25px + 7 * (100vw - 375px) / 1545);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 2px solid #DB0000;
+  padding: 0 0 0.75rem 0;
+}
+.p-customContact__title.is-complete {
+  text-align: left;
+}
+@media screen and (min-width: 640px) {
+  .p-customContact__title.is-complete {
+    text-align: center;
+  }
+}
+.p-customContact__title__completeMessage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 1rem;
+}
+.p-customContact__subtitle {
+  text-align: left;
+  padding: 1rem 0 0.5rem 0;
+}
+.p-customContact__label {
+  display: block;
+  border: 1px solid #707070;
+  padding: 0.25rem;
+  border-radius: 5px;
+}
+.p-customContact__label.is-confirm {
+  border: none;
+  border-bottom: 1px solid #707070;
+  border-radius: 0;
+  padding: 1rem 0 0.5rem 0;
+  text-align: left;
+  font-weight: 400;
+}
+.p-customContact__label.is-confirm.is-textarea {
+  line-height: 1.75rem;
+}
+.p-customContact__submit {
+  width: 265px;
+  margin: 0 auto;
+  padding-top: 2rem;
+}
+
+.wpcf7-spinner {
+  display: none !important;
+}
+
+.wpcf7 input,
+.wpcf7 textarea {
+  width: 97% !important;
+}
+@media screen and (min-width: 640px) {
+  .wpcf7 input,
+  .wpcf7 textarea {
+    width: 100% !important;
+    max-width: 490px;
+  }
+}
+
+.wpcf7-submit {
+  cursor: pointer;
+  color: #FFFFFF;
+  font-weight: bold;
+  background-color: #DB0000;
+  border-radius: 50px;
+  padding: 0.75rem;
+  font-size: calc(21px + 0 * (100vw - 375px) / 1545);
+}
+
+.wpcf7-not-valid-tip {
+  text-align: left;
+}
+
+.wpcf7-response-output {
+  display: none;
+}
 .u-query.is-pc {
   display: none;
 }
