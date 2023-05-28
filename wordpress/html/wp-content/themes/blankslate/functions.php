@@ -166,7 +166,7 @@ return $count;
 }
 
 /**
- * Undocumented function
+ * MEMO: お問い合わせフォーム関連にのみスタイルシートを適応
  *
  * @return void
  */

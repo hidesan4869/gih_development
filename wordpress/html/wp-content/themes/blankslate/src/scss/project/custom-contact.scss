@@ -124,8 +124,13 @@ input, textarea {
 
 .wpcf7 input,
 .wpcf7 textarea {
-    width: 100%!important;
-    max-width: 500px;
+    width: 97%!important;
+
+
+    @include mq(sm) {
+        width: 100%!important;
+        max-width: 490px;
+    }
 }
 
 .wpcf7-submit {
@@ -136,4 +141,12 @@ input, textarea {
     border-radius: 50px;
     padding: .75rem;
     font-size: calc(21px + (21 - 21) * ((100vw - 375px) / (1920 - 375)));
+}
+
+.wpcf7-not-valid-tip {
+    text-align: left;
+}
+
+.wpcf7-response-output {
+    display: none;
 }
