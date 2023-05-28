@@ -113,12 +113,6 @@ input, textarea {
 .p-customContact br {
   display: none;
 }
-.p-customContact label {
-  display: block;
-  border: 1px solid #707070;
-  padding: 0.25rem;
-  border-radius: 5px;
-}
 .p-customContact__container {
   max-width: 768px;
   width: 100%;
@@ -146,6 +140,23 @@ input, textarea {
 .p-customContact__subtitle {
   text-align: left;
   padding: 1rem 0 0.5rem 0;
+}
+.p-customContact__label {
+  display: block;
+  border: 1px solid #707070;
+  padding: 0.25rem;
+  border-radius: 5px;
+}
+.p-customContact__label.is-confirm {
+  border: none;
+  border-bottom: 1px solid #707070;
+  border-radius: 0;
+  padding: 1rem 0 0.5rem 0;
+  text-align: left;
+  font-weight: 400;
+}
+.p-customContact__label.is-confirm.is-textarea {
+  line-height: 1.75rem;
 }
 .p-customContact__submit {
   width: 265px;

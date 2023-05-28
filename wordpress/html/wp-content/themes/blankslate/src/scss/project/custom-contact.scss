@@ -24,13 +24,6 @@ input, textarea {
         display: none;
     }
 
-    label {
-        display: block;
-        border: 1px solid $gray70;
-        padding: .25rem;
-        border-radius: 5px;
-    }
-
     font-weight: bold;
 
     &__container {
@@ -64,6 +57,26 @@ input, textarea {
     &__subtitle {
         text-align: left;
         padding: 1rem 0 .5rem 0;
+    }
+
+    &__label {
+        display: block;
+        border: 1px solid $gray70;
+        padding: .25rem;
+        border-radius: 5px;
+
+        &.is-confirm {
+            border: none;
+            border-bottom: 1px solid $gray70;
+            border-radius: 0;
+            padding: 1rem 0 0.5rem 0;
+            text-align: left;
+            font-weight: 400;
+
+            &.is-textarea {
+                line-height: 1.75rem;
+            }
+        }
     }
 
     &__submit {
