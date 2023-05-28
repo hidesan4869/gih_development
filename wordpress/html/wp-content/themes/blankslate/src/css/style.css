@@ -113,6 +113,11 @@ input, textarea {
 .p-customContact br {
   display: none;
 }
+@media screen and (min-width: 640px) {
+  .p-customContact br.is-complete {
+    display: block;
+  }
+}
 .p-customContact__container {
   max-width: 768px;
   width: 100%;
@@ -136,6 +141,28 @@ input, textarea {
   border-bottom: 2px solid #DB0000;
   margin: 0 auto;
   padding: 0 0 0.75rem 0;
+}
+.p-customContact__title h2 {
+  font-size: calc(25px + 7 * (100vw - 375px) / 1545);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 2px solid #DB0000;
+  padding: 0 0 0.75rem 0;
+}
+.p-customContact__title.is-complete {
+  text-align: left;
+}
+@media screen and (min-width: 640px) {
+  .p-customContact__title.is-complete {
+    text-align: center;
+  }
+}
+.p-customContact__title__completeMessage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 1rem;
 }
 .p-customContact__subtitle {
   text-align: left;
