@@ -7,7 +7,19 @@
 </div>
 </footer>
 </div>
+
+<?php
+    $defaultFlg = null;
+    if (isPageProductIntroduction()) {
+        $defaultFlg = false;
+        get_template_part('/app/Views/FooterLandingPage');
+
+    } else {
+        $defaultFlg = true;
+    }
+?>
 <?php wp_footer(); ?>
+<?php if ($defaultFlg): ?>
 <div class="footer-section">
   <div class="footer-content">
     <div class="footer-left-container">
@@ -42,6 +54,7 @@
     <span  lang="en" class="copyright-span">Copyright © 2022 Global Innovation Handle Co.,Ltd. All rights reserved.</span>
   </div>
 </div>
+<?php endif; ?>
 </body>
 <script type="text/javascript">
 		

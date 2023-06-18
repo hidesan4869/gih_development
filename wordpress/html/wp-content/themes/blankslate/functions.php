@@ -166,13 +166,12 @@ return $count;
 }
 
 /**
- * MEMO: お問い合わせフォーム関連にのみスタイルシートを適応
+ * LP時の判定関数
  *
- * @return void
+ * @return boolean
  */
-function customContactFormStyle() {
-    if (is_page('contact') || is_page('contact-confirm') || is_page('contact-complete')) {
-        wp_enqueue_style('style', get_template_directory_uri() . '/src/css/style.css');
-    }
+function isPageProductIntroduction(): bool
+{
+    $currentUrl = $_SERVER['REQUEST_URI'];
+    return strpos($currentUrl, '/product-introduction/') !== false;
 }
-add_action('wp_enqueue_scripts', 'customContactFormStyle');

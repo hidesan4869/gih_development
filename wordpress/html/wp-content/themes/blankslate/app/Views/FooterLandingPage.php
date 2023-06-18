@@ -1,4 +1,11 @@
-<footer>
+<?php
+$url = $_SERVER['REQUEST_URI'];
+$completeFlg = false;
+if ($url === '/product-introduction/contact-complete/') {
+    $completeFlg = true;
+}
+?>
+<footer class="<?php echo $completeFlg ? 'absolute bottom-0 w-full' : ''; ?>">
     <div class="p-footer">
         <div class="p-footer__container">
             <div class="p-footer__inner">

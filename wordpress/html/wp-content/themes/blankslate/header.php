@@ -5,9 +5,21 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+JP|Questrial">
 <meta name="viewport" content="width=device-width" />
 <?php wp_head(); ?>
+<?php
+$defaultFlg = null;
+if (isPageProductIntroduction()) {
+    $defaultFlg = false;
+    get_template_part('/app/Views/HeaderLandingPage');
+    
+} else {
+    $defaultFlg = true;
+}
+?>
 </head>
 <body <?php /* body_class(); */?>>
 <?php wp_body_open(); ?>
+
+<?php if ($defaultFlg): ?>
 <div id="wrapper" class="hfeed">
 	
 <header id="header" role="banner">
@@ -162,5 +174,7 @@ Facebook広告</a></span></li>
   </div>
 </div>
 </header>
+<? endif ;?>
+
 <div id="container">
 <main id="content" role="main">

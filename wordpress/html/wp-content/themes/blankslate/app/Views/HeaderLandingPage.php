@@ -9,7 +9,7 @@
 <meta name="viewport" content="width=device-width" />
 <?php wp_head(); ?>
 
-<?php if ($url == '/product-introduction/'): ?>
+<?php if (strpos($url, '/product-introduction/') !== false): ?>
     <link rel="stylesheet" href="/wp-content/themes/blankslate/css/tailwind.prod.css">
     <link rel="stylesheet" href="/wp-content/themes/blankslate/src/css/style.css">
 <?php endif; ?>
